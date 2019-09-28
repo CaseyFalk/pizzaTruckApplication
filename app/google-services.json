@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "864026808907",
+    "firebase_url": "https://pizza-truck-app.firebaseio.com",
+    "project_id": "pizza-truck-app",
+    "storage_bucket": "pizza-truck-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:864026808907:android:bd8595f04b16297a1273ce",
+        "android_client_info": {
+          "package_name": "com.example.casey.pizzatruckapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "864026808907-io8p04dp48d4nqna2hc5ed3ijpnk8f1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9wXe_SAb_SQzu79qnI3eXA2F8EcfcXHQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "864026808907-io8p04dp48d4nqna2hc5ed3ijpnk8f1f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:864026808907:android:4ecfaa1dd9a09ac01273ce",
+        "android_client_info": {
+          "package_name": "com.grizzhacks.pizzatruck"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "864026808907-io8p04dp48d4nqna2hc5ed3ijpnk8f1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9wXe_SAb_SQzu79qnI3eXA2F8EcfcXHQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "864026808907-io8p04dp48d4nqna2hc5ed3ijpnk8f1f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
