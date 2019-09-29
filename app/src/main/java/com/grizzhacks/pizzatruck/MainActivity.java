@@ -4,7 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -65,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements
                             // Sign in success, update UI with the signed-in user's information
                             Log.d("info", "signInWithEmail:success");
                             System.out.println("User login Success");
-                            FirebaseUser user = mAuth.getCurrentUser();
+                            //FirebaseUser user = mAuth.getCurrentUser();
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w("info", "signInWithEmail:failure", task.getException());
@@ -86,7 +85,7 @@ public class MainActivity extends AppCompatActivity implements
 
         if (v == textViewSignup) {
             finish();
-            //startActivity(new Intent(this, SignUpActivity.class));
+            startActivity(new Intent(this, SignUpActivity.class));
         }
     }
 }
