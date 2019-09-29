@@ -52,7 +52,7 @@ public class SignUpActivity extends AppCompatActivity implements
 
     private void userSignUp() {
 
-        String email = editTextEmail.getText().toString().trim();
+        final String email = editTextEmail.getText().toString().trim();
         //String name = editTextName.getText().toString().trim();
         String password  = editTextPassword.getText().toString().trim();
 
@@ -73,12 +73,12 @@ public class SignUpActivity extends AppCompatActivity implements
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             System.out.println("In successful registration");
-                            //FirebaseDatabase database = FirebaseDatabase.getInstance();
+                            FirebaseDatabase database = FirebaseDatabase.getInstance();
                             //DatabaseReference setName = database.getReference("/users/" + mAuth.getUid() + "/name");
                             //setName.setValue(name);
-                            System.out.println("After adding name");
-                            //DatabaseReference setEmail = database.getReference("/users/" + mAuth.getUid() + "/email");
-                            //setEmail.setValue(email);
+                            //System.out.println("After adding name");
+                            DatabaseReference setEmail = database.getReference("/users/" + mAuth.getUid() + "/email");
+                            setEmail.setValue(email);
                             System.out.println("After adding email");
 
                             Log.d("info", "createUserWithEmail:success");
