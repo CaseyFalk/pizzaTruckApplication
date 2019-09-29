@@ -64,6 +64,8 @@ public class MainActivity extends AppCompatActivity implements
                             // Sign in success, update UI with the signed-in user's information
                             Log.d("info", "signInWithEmail:success");
                             System.out.println("User login Success");
+                            finish();
+                            startActivity(new Intent(MainActivity.this, StopActivity.class));
                             //FirebaseUser user = mAuth.getCurrentUser();
                         } else {
                             // If sign in fails, display a message to the user.

@@ -80,7 +80,8 @@ public class SignUpActivity extends AppCompatActivity implements
                             DatabaseReference setEmail = database.getReference("/users/" + mAuth.getUid() + "/email");
                             setEmail.setValue(email);
                             System.out.println("After adding email");
-
+                            finish();
+                            startActivity(new Intent(SignUpActivity.this, StopActivity.class));
                             Log.d("info", "createUserWithEmail:success");
                             //FirebaseUser user = mAuth.getCurrentUser();
                         } else {
